@@ -41,3 +41,6 @@ Now, Head over to constants.json and set `"virtual_mic"` to the name of your vir
 ```
 python3 main.py
 ```
+
+Now to get the virtual mic input into other applications, head over to the application (im using Zoom in this case) and select the name of your virtual microphone
+![img_2.png](img_2.png)
