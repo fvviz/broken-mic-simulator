@@ -1,4 +1,4 @@
-# Voice-Lag-Simulator
+# Laggy mic simulator
 ![img.png](img.png)
 
 Adds stimulated lag and distortion to voice that is coming from yours mic
