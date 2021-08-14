@@ -24,4 +24,20 @@ pip3 install -r requirements.txt
 **Note:** Installing pyaudio can be a little hard and can break into some errors
 
 - Windows users may face `error: Microsoft Visual C++..`. You can refer to <a href="https://stackoverflow.com/questions/59467023/getting-error-microsoft-visual-c-14-0-is-required-when-installing-pyaudio">this</a> for a solution
-- MacOS users need to first install **Portaudio** via **Homebrew** to download pyaudio. If you are on an **Apple Silicon Mac** Then you can refer to <a href="https://stackoverflow.com/questions/65709212/import-pyaudio-doesnt-work-symbol-not-found-pamaccore-setupchannelmap-on-ma"> this </a> as this was the only solution that worked for me
+- MacOS users need to first install **Portaudio** via **Homebrew** to download pyaudio. 
+  - If you are on an **Apple Silicon Mac** then you can refer to <a href="https://stackoverflow.com/questions/65709212/import-pyaudio-doesnt-work-symbol-not-found-pamaccore-setupchannelmap-on-ma"> this </a> as this was the only solution that worked for me
+
+# Setup and Running
+
+Head over to the constants.json file to setup the configurations
+
+**Selecting Your Virtual Microphone**
+
+To check if the program detects your virtual mic, run
+`python3 mics.py`Your virtual mic has to be listed in the output. 
+
+Now, Head over to constants.json and set `"virtual_mic"` to the name of your virtual mic. Now you are all good to go, Run
+
+```
+python3 main.py
+```
