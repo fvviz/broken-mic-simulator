@@ -1,4 +1,4 @@
 soundcard
-pyaudio
 numpy
 matplotlib
+pyaudio
