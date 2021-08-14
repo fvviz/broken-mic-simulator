@@ -20,13 +20,13 @@ delay_frames = 10
 audio = pyaudio.PyAudio()
 sp = sc.get_speaker(constants["virtual_mic"])
 
-stream = audio.open(format=format, channels=constants["channels"],
+stream = audio.open(format=format_, channels=constants["channels"],
                     rate=constants["read_rate"], input=True, frames_per_buffer=constants["chunk"])
 
 
 with sp.player(samplerate=constants["write_rate"]) as v:
     while True:
-        print("Transmitting distorted Audio on")
+        print(f">>> Transmitting distorted Audio on {sp.name} ")
         data = stream.read(constants["chunk"])
         transf_data = np.array(wave.struct.unpack("%dh" % (len(data) / 2), data))
         if k%constants["delay_multiple"] == 0:
