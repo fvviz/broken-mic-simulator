@@ -3,7 +3,7 @@
 
 Adds stimulated lag and distortion to voice that is coming from yours mic
 
-#Installation
+# Installation
 First of all make sure you have a virtual mic that routes audio from one app to another installed. 
 
 - For MacOS I'd recommend <a href="https://github.com/ExistentialAudio/BlackHole"> BlackHole </a>  
