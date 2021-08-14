@@ -1,0 +1,1 @@
+{"virtual_mic": "BlackHole", "chunk": 4096, "read_rate": 44100, "write_rate": 48000, "delay_multiple": 2, "delay_frames": 10, "channels":  1}

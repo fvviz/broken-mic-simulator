@@ -1,31 +1,38 @@
 import pyaudio
 import wave
 import numpy as np
+import json
 
 import soundcard as sc
 
 
-virtual_mic = "BlackHole"
-chunk = 1024
-FORMAT = pyaudio.paInt16
-CHANNELS = 1
-RATE = 41000
+json_file = open("constants.json", "r")
+constants = json.load(json_file)
+json_file.close()
+
+
+format_ = pyaudio.paInt16
 k = 1
 
+delay_multiple = 2
+delay_frames = 10
+
 audio = pyaudio.PyAudio()
-sp = sc.get_speaker("BlackHole")
+sp = sc.get_speaker(constants["virtual_mic"])
 
-stream = audio.open(format=FORMAT, channels=CHANNELS,
-                    rate=RATE, input=True, frames_per_buffer=chunk)
+stream = audio.open(format=format, channels=constants["channels"],
+                    rate=constants["read_rate"], input=True, frames_per_buffer=constants["chunk"])
 
 
-with sp.player(samplerate=44800) as v:
+with sp.player(samplerate=constants["write_rate"]) as v:
     while True:
         print("Transmitting distorted Audio on")
-        data = stream.read(1024)
-        data = np.array(wave.struct.unpack("%dh" % (len(data) / 2), data))
-        if k%15 == 0:
+        data = stream.read(constants["chunk"])
+        transf_data = np.array(wave.struct.unpack("%dh" % (len(data) / 2), data))
+        if k%constants["delay_multiple"] == 0:
+            for i in range(0, constants["delay_frames"]):
+                pass
             pass
         else:
-            v.play(data)
+            v.play(transf_data)
         k += 1
