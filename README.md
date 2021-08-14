@@ -1,7 +1,7 @@
 # Voice-Lag-Simulator
 ![img.png](img.png)
 
-Adds stimulated lag and distortion to voice that is coming from yours mic
+Adds stimulated lag and distortion to voice that is coming from your mic and sends it to an app of your choice
 
 # Installation
 First of all make sure you have a virtual mic that routes audio from one app to another installed. 
