@@ -1,4 +1,4 @@
-# Laggy mic simulator
+# Broken mic simulator
 ![img.png](img.png)
 
 Adds stimulated lag and distortion to voice that is coming from your mic and sends it to an app of your choice
