@@ -36,10 +36,10 @@ Once Pyaudio is setup head over to the constants.json file to setup the configur
 
 **Selecting Your Virtual Microphone**
 
-To check if the program detects your virtual mic, run
+- To check if the program detects your virtual mic, run
 `python3 mics.py`Your virtual mic has to be listed in the output. 
 
-Now, Head over to constants.json and set `"virtual_mic"` to the name of your virtual mic. Now you are all good to go, Run
+- Now, Head over to constants.json and set `"virtual_mic"` to the name of your virtual mic. Now you are all good to go, Run
 
 ```
 python3 main.py
