@@ -1,3 +1,2 @@
 soundcard
 numpy
-matplotlib
