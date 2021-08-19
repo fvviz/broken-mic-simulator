@@ -21,7 +21,7 @@ cd Voice-Lag-Simulator
 pip3 install -r requirements.txt
 ```
 
-**Note:** Installing pyaudio can be a little hard and can break into some errors
+** Installing pyaudio** can be a little hard and can break into some errors
 
 - Windows users may face `error: Microsoft Visual C++..`. You can refer to <a href="https://stackoverflow.com/questions/59467023/getting-error-microsoft-visual-c-14-0-is-required-when-installing-pyaudio">this</a> for a solution
 - MacOS users need to first install **Portaudio** via **Homebrew** to download pyaudio. 
@@ -29,7 +29,7 @@ pip3 install -r requirements.txt
 
 # Setup and Running
 
-Head over to the constants.json file to setup the configurations
+Once Pyaudio is setup head over to the constants.json file to setup the configurations
 
 **Selecting Your Virtual Microphone**
 
