@@ -21,11 +21,14 @@ cd Voice-Lag-Simulator
 pip3 install -r requirements.txt
 ```
 
-** Installing pyaudio** can be a little hard and can break into some errors
+**Installing pyaudio** can be a little hard and can break into some errors
 
-- Windows users may face `error: Microsoft Visual C++..`. You can refer to <a href="https://stackoverflow.com/questions/59467023/getting-error-microsoft-visual-c-14-0-is-required-when-installing-pyaudio">this</a> for a solution
+- Windows users may face `error: Microsoft Visual C++..`. You can refer to <a href="https://stackoverflow.com/questions/59467023/getting-error-microsoft-visual-c-14-0-is-required-when-installing-pyaudio">this</a> for a solution. If this doesnt work go search "how to install pyaudio on windows" and you would find somehting
 - MacOS users need to first install **Portaudio** via **Homebrew** to download pyaudio. 
   - If you are on an **Apple Silicon Mac** then you can refer to <a href="https://stackoverflow.com/questions/65709212/import-pyaudio-doesnt-work-symbol-not-found-pamaccore-setupchannelmap-on-ma"> this </a> as this was the only solution that worked for me
+  
+  
+ If You still cant get pyaudio to install on your computer just look for a solution on youtube or other websites. 
 
 # Setup and Running
 
