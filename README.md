@@ -12,8 +12,8 @@ First of all make sure you have a virtual mic that routes audio from one app to 
 
 **Clone the Repository**
 ```
-git clone https://github.com/fvviz/Voice-Lag-Simulator.git 
-cd Voice-Lag-Simulator
+git clone https://github.com/fvviz/broken-mic-simulator.git 
+cd broken-mic-simulator
 ```
 
 **Install requirements**
