@@ -21,7 +21,8 @@ cd broken-mic-simulator
 pip3 install -r requirements.txt
 ```
 next you have to install pyaudio
-`pip install pyaudio` i
+`pip install pyaudio` is what you have to do but in most of the cases this will not work
+
 **Installing pyaudio** can be a little hard and can break into some errors
 
 - Windows users may face `error: Microsoft Visual C++..`. You can refer to <a href="https://stackoverflow.com/questions/59467023/getting-error-microsoft-visual-c-14-0-is-required-when-installing-pyaudio">this</a> for a solution. If this doesnt work go search "how to install pyaudio on windows" and you would find somehting
